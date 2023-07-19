@@ -1,4 +1,12 @@
 @charset "UTF-8";
+
+@font-face{ 
+  font-family: 'mplus-1p-heavy';
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-heavy.eot');
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-heavy.eot?#iefix') format('embedded-opentype'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1p-heavy.woff') format('woff'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1p-heavy.ttf') format('truetype');
+}
 /*======================================================
 基本 全体の設定
 ======================================================*/
@@ -18,7 +26,7 @@ body {
 body {
   font-size: 16px;
   line-height: 1.6;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-family: 'mplus-1p-heavy';
   color: #333333;
   letter-spacing: 0.05em;
   min-height: 100vh;

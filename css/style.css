@@ -1,11 +1,9 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700&display=swap');
 @font-face{ 
   font-family: 'mplus-1p-heavy';
-  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-heavy.eot');
-  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1p-heavy.eot?#iefix') format('embedded-opentype'),
-       url('http://mplus-webfonts.sourceforge.jp/mplus-1p-heavy.woff') format('woff'),
-       url('http://mplus-webfonts.sourceforge.jp/mplus-1p-heavy.ttf') format('truetype');
+  src: url('./mplus-1p-heavy.woff');
+  
 }
 /*======================================================
 基本 全体の設定
@@ -19,14 +17,14 @@
 html,
 body {
   font-feature-settings: "palt";
-  background-color: #fff;
+  background-color: #fcfcfc;
   position: relative;
 }
 
 body {
   font-size: 16px;
   line-height: 1.6;
-  font-family: 'mplus-1p-heavy';
+  font-family: 'Zen Maru Gothic', sans-serif;
   color: #333333;
   letter-spacing: 0.05em;
   min-height: 100vh;
@@ -75,11 +73,12 @@ header
 header {
   position: fixed;/* position: fixedにするとスクロールしても同じ位置に表示される */
   z-index: 2; /* z-indexはレイヤーの前後関係。数字が大きくなるほど手前 */
-  max-width: 1000px;/* max-widthは最大幅 ウィンドウが小さくなればそれに合わせてせまくなる */
+  
   top: 0;
   left: 0;
   right: 0;
   margin: auto;
+  color: #fff;
 }
 
 header a {
@@ -88,14 +87,13 @@ header a {
 }
 
 header .inner {
-  background-color: #fff;
+  background-color: #f9af03;
   position: relative;
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
   border-radius: 4px;
-  margin: 20px;
 }
 
 /* ロゴ */
@@ -211,15 +209,17 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
   height: 500px;
   color: #fff;
   font-weight: bold;
-  background-image: url(../images/top.jpg);/* 背景画像 */
-  background-size: cover;/* 背景画像のサイズ 要素いっぱいに表示 */
-  background-position: center center;/* 背景画像の位置 */
-  background-attachment: fixed;/* スクロールしたときの背景画像の位置 固定 */
-  
+ font-size: 100px;
+  background-color: #e76b19;
   /* 上下左右中央テクニック https://ics.media/entry/17522/ */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.top_eye_catch img{
+  height: 400px;
+  border-radius: 200px;
 }
 
 .link_menu{
@@ -260,9 +260,9 @@ a.link_btn{
 
 a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   opacity: 1;/* 半透明にならないように上書き */
-  border-radius: 0;
   color: #fff;
-  background-color: #333;
+  background-color: #ff0404;
+  width: 400px;
 }
 
 /* =================================================
